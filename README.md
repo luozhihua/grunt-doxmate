@@ -9,6 +9,8 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 
 ```shell
 npm install doxmate -g
+```
+```shell
 npm install grunt-doxmate --save-dev
 ```
 
