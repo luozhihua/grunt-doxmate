@@ -11,10 +11,9 @@ var exec = require('child_process').exec,
     path = require('path'),
     rimraf = require('rimraf');
 
-
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('doxmate', 'Generate dox output ', function() {
+  grunt.registerMultiTask('doxmate', 'Generate doxmate output ', function() {
 
     var dir  = this.filesSrc,
         dest = this.data.dest,
@@ -47,40 +46,5 @@ module.exports = function(grunt) {
         done();
       }
     });
-    // Absolute path to the formatter
-    //var formatter = [doxPath, 'node_modules', '.bin', 'doxmate'].join(path.sep);
-
-/*
-    // Cleanup any existing docs
-    rimraf.sync(dest);
-
-    _args.push('--source');
-    _args.push(dir);
-    _args.push('--o');
-    _args.push(dest);
-
-    // Set options to arguments
-    if(_opts.title){
-      _args.push('--title');
-      _args.push('"' + _opts.title + '"');
-    }
-
-    // Pass through ignore params if set
-    if (this.data.ignore) {
-      _args.push('--ignore');
-      this.data.ignore.forEach(function(ignorePath) {
-        _args.push(doxPath + ignorePath);
-      });
-
-    }
-
-    exec('doxmate build  ' + _args.join(" "), {maxBuffer: 5000*1024}, function(error, stout, sterr){
-      if (error) { grunt.log.error("ERROR:  "+ error); }
-      if (!error) {
-        grunt.log.ok('Directory "' + dir + '" doxxed.');
-        done();
-      }
-    });
-*/
   });
 };

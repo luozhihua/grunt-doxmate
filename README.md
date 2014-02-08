@@ -1,6 +1,6 @@
 # grunt-doxmate
 
-Doxmate grunt plugin to automatically generate documentation for you project. Currently generates HTML output using [doxmate](https://github.com/JackjsonTian/doxmate)
+Doxmate grunt plugin to automatically generate documentation for you project. Currently generates JSON output using [dox](https://github.com/JackjsonTian/dox), and generates HTML output using [doxmate](https://github.com/JackjsonTian/doxmate)
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
@@ -31,9 +31,9 @@ doxmate: {
 },
 ```
 
-This will run all of your files in `lib` through dox and dox-foundation and  put the output in `docs`.
+This will run all of your files in `lib` through dox and doxmate and  put the output in `docs`.
 
-Since the `grunt-dox` task is a multi task, you can create several tasks for dox:
+Since the `grunt-doxmate` task is a multi task, you can create several tasks for doxmate:
 
 ```js
 doxmate: {
@@ -79,13 +79,8 @@ doxmate: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].
 
 ## Release History
-* **0.3.2** *2013-03-20*:
-** Grunt v0.4 support
-** Ability to pass options.title to dox-foundation
-* **0.3.0**: Now relies solely on folder parsing done by dox-foundation v0.4
-* **0.2.0**: Pass multiple files at once. Use dox-foundation for html output
 * **0.1.0**: Initial release
 
 ## License
-Copyright (c) 2012 P'unk Ave
+Copyright (c) 2012 Colin Luo
 Licensed under the MIT license.
