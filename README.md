@@ -20,7 +20,7 @@ grunt.loadNpmTasks('grunt-doxmate');
 ## Documentation
 Inside of your grunt file, add:
 ```javascript
-dox: {
+doxmate: {
   options: {
     title: "My Library's awesome documentation"
   },
@@ -36,7 +36,7 @@ This will run all of your files in `lib` through dox and dox-foundation and  put
 Since the `grunt-dox` task is a multi task, you can create several tasks for dox:
 
 ```js
-dox: {
+doxmate: {
   libdocs :{
     files: {
       src: ['js/lib/'],
@@ -61,7 +61,7 @@ To ignore certain directories, or to override the default ignore list, simpy add
 Usage:
 
 ```js
-dox: {
+doxmate: {
   options: {
     title: 'Ignore Nothing for my awesome documentation'
   },
