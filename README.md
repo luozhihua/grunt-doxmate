@@ -85,5 +85,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 * **0.1.0**: Initial release
 
 ## License
-Copyright (c) 2012 Colin Luo
+Copyright (c) 2013 Colin Luo
 Licensed under the MIT license.
